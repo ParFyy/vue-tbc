@@ -1,6 +1,10 @@
 <template>
-  <Navbar />
-  <Fixtures />
+  <v-app>
+    <v-main>
+      <Navbar />
+      <Fixtures />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
