@@ -47,7 +47,7 @@ export default {
     },
     methods: {
         async getFixtures() {
-            return (await axios.get("https://ndblfixturesoftware.herokuapp.com/GetTbcFixtures")).data;
+            return (await axios.get("http://localhost:8080/GetTbcFixtures")).data;
         }
     },
     async created () {
