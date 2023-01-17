@@ -32,7 +32,7 @@ func main() {
 
 	http.HandleFunc("/GetTbcFixtures", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
-		w.Header().Set("Access-Control-Allow-Origin", "http://localhost:8080")
+		w.Header().Set("Access-Control-Allow-Origin", "https://test.tasburghbadmintonclub.co.uk")
 		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(fixtures)
 	})
